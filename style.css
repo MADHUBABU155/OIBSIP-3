@@ -6,16 +6,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #222;
+  background-color: #f2f2f2;
 }
 
 .wrapper {
-  width: 400px;
-  padding: 20px;
-  background-color: #333;
+  width: 1000px; 
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
   border-radius: 5px;
-  color: #fff;
+  color: #333333;
   font-family: Arial, sans-serif;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5); 
+}
+
+.left-column {
+  flex: 0 0 400px; 
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: -10px 0 25px rgba(0, 0, 0, 0.5); 
+}
+
+.right-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 10px 0 25px rgba(0, 0, 0, 0.5);
 }
 
 .task-input input[type="text"] {
@@ -25,14 +42,14 @@ body {
   border-radius: 5px;
   font-size: 14px;
   outline: none;
-  background-color: #444;
-  color: #fff;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .filters span {
   cursor: pointer;
   margin-right: 10px;
-  color: #fff;
+  color: #333333;
 }
 
 .filters span.active {
@@ -44,7 +61,7 @@ body {
   border: none;
   border-radius: 5px;
   background-color: #e74c3c;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   font-size: 14px;
   outline: none;
@@ -69,11 +86,12 @@ body {
   margin: 0;
   padding: 5px;
   font-size: 14px;
+  color: #333333;
 }
 
 .task p.checked {
   text-decoration: line-through;
-  color: #888;
+  color: #888888;
 }
 
 .settings {
@@ -83,7 +101,7 @@ body {
 
 .settings i {
   cursor: pointer;
-  color: #fff;
+  color: #333333;
 }
 
 .task-menu {
@@ -93,8 +111,8 @@ body {
   display: none;
   list-style: none;
   padding: 5px 0;
-  background-color: #444;
-  border: 1px solid #888;
+  background-color: #ffffff;
+  border: 1px solid #888888;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -107,11 +125,11 @@ body {
   padding: 5px 10px;
   cursor: pointer;
   font-size: 14px;
-  color: #fff;
+  color: #333333;
 }
 
 .task-menu li:hover {
-  background-color: #555;
+  background-color: #f5f5f5;
 }
 
 .overflow {
@@ -122,6 +140,24 @@ body {
 span {
   display: block;
   text-align: center;
-  color: #888;
+  color: #888888;
   margin-top: 10px;
 }
+
+
+.add-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0c84e4;
+}
+
